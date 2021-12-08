@@ -9,7 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var button: UIButton!
+  
+   
+    @IBOutlet weak var buttonNew: UIButton!
     @IBOutlet var switches: [UISwitch]!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var text: UITextField!
@@ -19,16 +21,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func buttonPressed() {
+ 
+
+    @IBAction func buttonNewPressed() {
+        print(#line, #function)
     }
     
     @IBAction func switchToodled(_ sender: UISwitch) {
+        print(#line, #function, sender.tag)
     }
    
     @IBAction func sladerMoved() {
+        print(#line, #function)
     }
 
     @IBAction func textAdded() {
+        print(#line, #function)
     }
     
 }
