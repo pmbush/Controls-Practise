@@ -72,15 +72,6 @@
                                     <action selector="switchToodled:" destination="BYZ-38-t0r" eventType="valueChanged" id="a4f-m9-yoF"/>
                                 </connections>
                             </switch>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Rc-IK-yCg">
-                                <rect key="frame" x="167" y="572" width="82" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textAdded" destination="BYZ-38-t0r" eventType="editingChanged" id="zxe-Lf-guA"/>
-                                </connections>
-                            </textField>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="128" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="LDg-e4-cep">
                                 <rect key="frame" x="49" y="460" width="318" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -99,6 +90,16 @@
                                     <action selector="buttonNewPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="kBJ-qy-eZ2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XyQ-qk-NuH">
+                                <rect key="frame" x="162" y="623" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEdited" destination="BYZ-38-t0r" eventType="editingChanged" id="UHt-Y7-6oG"/>
+                                    <action selector="textFieldEditedd" destination="BYZ-38-t0r" eventType="editingDidEnd" id="9uH-bQ-TuS"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,7 +107,7 @@
                     <connections>
                         <outlet property="buttonNew" destination="oWk-Qo-zlL" id="uWe-eU-YP6"/>
                         <outlet property="slider" destination="LDg-e4-cep" id="bKR-eo-1xR"/>
-                        <outlet property="text" destination="8Rc-IK-yCg" id="1Pf-vq-1Q8"/>
+                        <outlet property="textField" destination="XyQ-qk-NuH" id="QSQ-la-SQM"/>
                         <outletCollection property="switches" destination="4fr-xp-fZ5" collectionClass="NSMutableArray" id="nYz-HC-VB5"/>
                         <outletCollection property="switches" destination="aXU-kC-NfS" collectionClass="NSMutableArray" id="Lfe-Xh-kET"/>
                         <outletCollection property="switches" destination="90W-5t-ckZ" collectionClass="NSMutableArray" id="b2M-mw-Mpu"/>
